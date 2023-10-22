@@ -112,11 +112,20 @@ nav {
   text-transform: capitalize;
 }
 .pokemonStarButton{
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
   background-color: black;
+  padding: 4px;
+  cursor: pointer;
 }
 
 .paginationContainer{
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.notFoundText{
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 20px;
 }
