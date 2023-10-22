@@ -3,12 +3,16 @@ import Pokemon from "./Pokemon";
 import Pagination from "./Pagination";
 
 const Pokedex = (props) => {
-    const { pokemons, loading , page, totalPages} = props;
+    const { pokemons, loading , page, setPage, totalPages} = props;
     const onPreviousClickHandler = () => {
-        console.log("oi");
+        if(page > 0) {
+            setPage(page - 1)
+        }
     }
     const onNextClickHandler = () => {
-        console.log("oi");
+        if(page < totalPages-1) {
+            setPage(page + 1)
+        }
     }
     return (
         <div>
