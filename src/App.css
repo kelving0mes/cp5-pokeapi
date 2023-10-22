@@ -1,11 +1,9 @@
 .App {
   text-align: center;
 }
-
 * {
   margin: 0px;
 }
-
 nav {
   height: 100px;
   display: flex;
@@ -39,5 +37,17 @@ nav {
   height: 40px;
   color: white;
   padding: 10px 12px;
+}
 
+.pokedexHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.pokedexGrid{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
 }
