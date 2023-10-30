@@ -34,7 +34,11 @@ function App() {
   };
   const loadFavoritePokemons = () => {
     const pokemons = JSON.parse(window.localStorage.getItem(favoritesKey));
-    setFavorites([]);
+    if (pokemons === null) {
+      setFavorites([]);
+    } else {
+      setFavorites(pokemons);
+    }
   };
 
   useEffect(() => {
